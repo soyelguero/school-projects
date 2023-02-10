@@ -12,34 +12,55 @@ t.pencolor("black")
 t.fillcolor("red")
 t.shape('classic')
 
-#right wing
-t.pu()
-t.setpos(200, 0)
-t.seth(270)
-t.pd()
-t.forward(100)
-t.pu()
-t.forward(20)
-t.pd()
-t.begin_fill()
-t.forward(40)
-t.left(90)
-t.forward(40)
-t.seth(45)
-t.forward(58)
-t.end_fill()
-t.pu()
-t.forward(13)
-t.seth(180)
-t.forward(15)
-t.pd()
-t.begin_fill()
-t.forward(50)
-t.seth(285)
-t.forward(40)
-t.seth(42)
-t.forward(52)
-t.end_fill()
-t.pu()
+
+
+b = turtle
+b.mode('logo')
+b.up()
+b.setposition(-40, -20)
+b.seth(20)
+b.width(width=9)
+b.down()
+
+#tail
+b.begin_fill()
+b.seth(-160)
+b.forward(5)
+b.seth(-340)
+b.forward(20)
+b.seth(-200)
+b.forward(20)
+b.seth(-90)
+b.forward(5)
+b.end_fill()
+
+b.seth(0)
+
+#body
+b.circle(-20, 360/11)
+b.width(width=8)
+b.circle(80, 360/6)
+b.width(width=11)
+b.circle(-80, 360/8)
+b.width(width=13)
+b.circle(-80,360/10)
+b.width(width=10)
+b.circle(80,360/8)
+
+#head
+b.begin_fill()
+b.seth(90)
+b.forward(20)
+b.seth(340)
+b.forward(60)
+b.seth(200)
+b.forward(60)
+b.seth(90)
+b.forward(20)
+b.end_fill()
+
+
+
 
 t.exitonclick()
+
